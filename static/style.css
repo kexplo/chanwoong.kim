@@ -1,0 +1,22 @@
+body {
+    margin: 1.5em;
+}
+.container {
+    /* display: grid; */
+    /* grid-template-columns: auto auto; */
+}
+.profile img {
+    border-radius: 50%;
+    width: 4em;
+    margin: 0 0.5em 0 0;
+}
+.profile img, span {
+    vertical-align: middle;
+}
+div.profile {
+    /* grid-column-start: 1; */
+    /* grid-column-end: 3; */
+}
+div.profile span {
+    font-size: 1.2em;
+}

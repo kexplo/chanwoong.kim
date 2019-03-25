@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html ⚡ lang="en">
+<head>
+    <meta charset="utf-8">
+    <!-- AMP -->
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <style amp-custom>
+        #wrapper {
+            margin: 1.5em;
+        }
+        .profile img, amp-img {
+            border-radius: 50%;
+            width: 4em;
+            margin: 0 0.5em 0 0;
+        }
+        .profile img, span, amp-img {
+            vertical-align: middle;
+        }
+        div.profile span {
+            font-size: 1.2em;
+        }
+        p.powered-by {
+            font-size: 0.8em;
+        }
+    </style>
+    <!-- // AMP -->
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <link rel="canonical" href="https://chanwoong.kim">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+    <!-- // favicon -->
+    <title>Chanwoong Kim's Homepage</title>
+</head>
+<body>
+    <amp-analytics type="googleanalytics" id="ga">
+    <script type="application/json">
+    {
+      "vars": {
+        "account": "UA-120625399-1"
+      },
+      "triggers": {
+        "trackPageview": {
+          "on": "visible",
+          "request": "pageview"
+        },
+        "outboundLinks": {
+          "on": "click",
+          "selector": "a",
+          "request": "event",
+          "vars": {
+            "eventCategory": "outbound",
+            "eventAction": "click",
+          "eventLabel": "${outboundLink}"
+          }
+        }
+      }
+    }
+    </script>
+    </amp-analytics>
+    <div id="wrapper">
+    <header>
+        <div class="profile">
+            <amp-img width="4em" height="4em" src="imgs/profile-000.jpg" alt="profile image"></amp-img>
+            <span class="name">Chanwoong Kim</span>
+        </div>
+    </header>
+    <div class="container">
+        <section>
+            <h1>Hello</h1>
+            <p>, World?</p>
+        </section>
+        <section>
+            <h1>Social profile links</h1>
+            <ul>
+                <li><a href="https://github.com/kexplo" data-vars-outbound-link="https://github.com/kexplo">GitHub</a></li>
+                <li><a href="https://www.slideshare.net/kexplo" data-vars-outbound-link="https://www.slideshare.net/kexplo">SlideShare</a></li>
+                <li><a href="http://steamcommunity.com/id/kexplo" data-vars-outbound-link="http://steamcommunity.com/id/kexplo">Steam</a></li>
+            </ul>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2018 - Chanwoong Kim</p>
+        <p class="powered-by">Powered by ⚡ </p>
+    </footer>
+    </div>
+</body>
+</html>
