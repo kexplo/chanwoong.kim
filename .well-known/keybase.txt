@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/kexplo
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://chanwoong.kim
+  * I am kexplo (https://keybase.io/kexplo) on keybase.
+  * I have a public key ASAA9HPYhuf0ofVPOb-Xe57anI4zFPF5IIcrlLSgcjHwbwo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "012000f473d886e7f4a1f54f39bf977b9eda9c8e3314f17920872b94b4a07231f06f0a",
+      "host": "keybase.io",
+      "kid": "012000f473d886e7f4a1f54f39bf977b9eda9c8e3314f17920872b94b4a07231f06f0a",
+      "uid": "2ade506db659454f50ebf8ecbaef5319",
+      "username": "kexplo"
+    },
+    "merkle_root": {
+      "ctime": 1533713433,
+      "hash": "c1d9b56b94dea19b30f4eb1be86fb2a176b63e373b56d6a0dc7e69d3fb5298bda7dad30a23550111b9945f5911d87e718b33099193410f1b17f3450bfda42355",
+      "hash_meta": "632e19a19c9fce2b7126374fdea61dac40566cb428635833bdf9606a37e7067b",
+      "seqno": 3424954
+    },
+    "service": {
+      "entropy": "Azm424US15U5qzzylJ3ifv1h",
+      "hostname": "chanwoong.kim",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "2.3.0"
+  },
+  "ctime": 1533713465,
+  "expire_in": 504576000,
+  "prev": "74e8cf20ab1c58fe227850df7a22f902bddcca1f9b49ba9e07553fddf6971c41",
+  "seqno": 10,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgAPRz2Ibn9KH1Tzm/l3ue2pyOMxTxeSCHK5S0oHIx8G8Kp3BheWxvYWTESpcCCsQgdOjPIKscWP4ieFDfeiL5Ar3cyh+bSbqeB1U/3faXHEHEILC/gKHT6SfJYC5qpiz2Mk6wHq8ryvaLDP/XEME61YXRAgHCo3NpZ8RApEXj8xyJA9r/mPJe1EN7YBOLGvJPBNRZL511kXslIWyrzrxmeGRGUwSi3IK8hJkgS9ZoP/+q7fz6kAh5h1n1C6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIFqIKMtlOUGXSsh62MI7EAQnORhD+CEJ3l9Qpj3OfV03o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/kexplo
+
+==================================================================
