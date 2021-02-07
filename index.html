@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <!-- AMP -->
-    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
     <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
     <style amp-custom>
         body {
@@ -72,17 +72,16 @@
     <title>Chanwoong Kim's Homepage</title>
 </head>
 <body>
-    <amp-analytics type="googleanalytics" id="ga">
+    <amp-analytics type="gtag" data-credentials="include">
     <script type="application/json">
     {
       "vars": {
-        "account": "UA-120625399-1"
+        "gtag_id" : "UA-120625399-1"
+        "config": {
+            "UA-120625399-1": {}
+        }
       },
       "triggers": {
-        "trackPageview": {
-          "on": "visible",
-          "request": "pageview"
-        },
         "outboundLinks": {
           "on": "click",
           "selector": "a",
@@ -90,7 +89,7 @@
           "vars": {
             "eventCategory": "outbound",
             "eventAction": "click",
-          "eventLabel": "${outboundLink}"
+            "eventLabel": "${outboundLink}"
           }
         }
       }
@@ -103,9 +102,9 @@
             <amp-img width="4em" height="4em" src="imgs/profile-002.png" alt="rounded profile image"></amp-img>
             <div class="profile-detail">
                 <span class="name">Chanwoong Kim</span>
-                <small><a href="mailto:me@chanwoong.kim">me@chanwoong.kim</a></small>
+                <small><a href="mailto:me@chanwoong.kim" data-vars-outbound-link="mailto">me@chanwoong.kim</a></small>
                 <div>
-                    <a class="fab fa-github" href="https://github.com/kexplo"></a><a class="fab fa-linkedin" href="https://www.linkedin.com/in/chanwoong-kim/"></a><a class="fab fa-steam" href="https://steamcommunity.com/id/kexplo"></a>
+                    <a class="fab fa-github" href="https://github.com/kexplo" data-vars-outbound-link="github"></a><a class="fab fa-linkedin" href="https://www.linkedin.com/in/chanwoong-kim/" data-vars-outbound-link="linkedin"></a><a class="fab fa-steam" href="https://steamcommunity.com/id/kexplo" data-vars-outbound-link="steam"></a>
                 </div>
             </div>
         </div>
@@ -118,13 +117,13 @@
         <section>
             <h1>Talks</h1>
             <ul>
-                <li><a href="https://speakerdeck.com/kexplo/ndc-19-peurogeuraemeoga-jasan-gwanrihaneun-beob">NDC 2019 - 프로그래머가 자산 관리 하는 법</a></li>
-                <li><a href="https://www.slideshare.net/kexplo/ndc18-95418529">NDC 2018 - 만들고 붓고 부수고 - 〈야생의 땅: 듀랑고〉 서버 관리 배포 이야기</a></li>
-                <li><a href="https://www.slideshare.net/kexplo/ndc17-what-studio-service-part">NDC 2017 - 왓 스튜디오 서비스파트</a></li>
-                <li><a href="https://www.youtube.com/watch?v=7hHJ9DlwdFk">NDC 2016 - Find My AndPhone</a></li>
-                <li><a href="https://www.slideshare.net/kexplo/ndc2016-effective-git">NDC 2016 - Effective Git</a></li>
-                <li><a href="https://www.slideshare.net/kexplo/ndc15-48464024">NDC 2015 - 그룹웨어에 새 에너지를</a></li>
-                <li><a href="https://www.slideshare.net/kexplo/kgc2014-41254835">KGC 2014 - 삼한제국기 포스트모템</a></li>
+                <li><a href="https://speakerdeck.com/kexplo/ndc-19-peurogeuraemeoga-jasan-gwanrihaneun-beob" data-vars-outbound-link="ndc2019">NDC 2019 - 프로그래머가 자산 관리 하는 법</a></li>
+                <li><a href="https://www.slideshare.net/kexplo/ndc18-95418529" data-vars-outbound-link="ndc2018">NDC 2018 - 만들고 붓고 부수고 - 〈야생의 땅: 듀랑고〉 서버 관리 배포 이야기</a></li>
+                <li><a href="https://www.slideshare.net/kexplo/ndc17-what-studio-service-part" data-vars-outbound-link="ndc2017">NDC 2017 - 왓 스튜디오 서비스파트</a></li>
+                <li><a href="https://www.youtube.com/watch?v=7hHJ9DlwdFk" data-vars-outbound-link="ndc2016-findmyphone">NDC 2016 - Find My AndPhone</a></li>
+                <li><a href="https://www.slideshare.net/kexplo/ndc2016-effective-git" data-vars-outbound-link="ndc2016-effectivegit">NDC 2016 - Effective Git</a></li>
+                <li><a href="https://www.slideshare.net/kexplo/ndc15-48464024" data-vars-outbound-link="ndc2015">NDC 2015 - 그룹웨어에 새 에너지를</a></li>
+                <li><a href="https://www.slideshare.net/kexplo/kgc2014-41254835" data-vars-outbound-link="kgc2014">KGC 2014 - 삼한제국기 포스트모템</a></li>
             </ul>
         </section>
         <hr>
