@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+body {
+    font-family: "Noto Sans KR", sans-serif;
+    max-width: 50rem;
+    margin: 3rem 10%;
+    word-break: keep-all;
+}
+dd {
+    margin-left: 0.8em;
+}
+a:link, a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:visited {
+    color: #000ec5;
+}
+a:link {
+    color: #0058ff;
+}
+ul {
+    list-style: none;
+}
+ul li::before {
+    content: "–";
+    position: absolute;
+    left: -1em;
+}
+ul li {
+    position: relative;
+    list-style: none;
+}
+
+.department::before {
+    content: "/ ";
+    font-weight: 700;
+}
+
+
+/* contact */
+#contact h2 {
+    font-size: 0.9em;
+    font-weight: normal;
+    color: #444444;
+    margin: 0;
+    padding: 0;
+}
+
+section h2 {
+    font-size: 1.4em;
+}
+
+section h3 {
+    font-size: 1em;
+    margin: 0;
+    color: #3e3e3e;
+}
+
+.department {
+    font-size: 0.9em;
+}
+
+#skills p {
+    margin-top: 0.2em;
+}
+
+#contact ul {
+    margin: 0.4em 0;
+}
+
+#contact ul li {
+    font-size: 0.8em;
+}
+
+.company, .toyproject {
+    font-weight: 700;
+}
+
+.date-range {
+    color: #666666;
+    font-size: 0.75em;
+    display: block;
+}
+
+ul {
+    list-style: none;
+    padding-left: 1em;
+    margin-bottom: 1em;
+}
+ul li::before {
+    content: "–";
+    position: absolute;
+    left: 0;
+}
+ul li {
+    position: relative;
+    list-style: none;
+    padding-left: .8em;
+}
+
+footer {
+    border-top: 1px solid gray;
+    font-size: 0.9em;
+}

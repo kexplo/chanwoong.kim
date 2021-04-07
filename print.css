@@ -1,0 +1,23 @@
+@page {
+    margin: 10mm;
+}
+
+body {
+    font-family: "Noto Sans KR", sans-serif;
+    margin: 0;
+    max-width: 90%;
+    word-break: keep-all;
+}
+
+a:link, a:visited {
+    color: #0058ff;
+}
+
+#opensource-experience dd {
+    margin-top: -0.2em;
+    margin-bottom: 0.8em;
+}
+
+section.pb {
+    page-break-after: always;
+}
