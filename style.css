@@ -8,16 +8,14 @@ body {
     margin: 3rem 10%;
 }
 
-.profile img,
-.profile amp-img {
+.profile img {
     border-radius: 50%;
     width: 4em;
     margin: 0 0.5em 0 0;
 }
 
 .profile img,
-.profile span,
-.profile amp-img {
+.profile span {
     vertical-align: middle;
 }
 
