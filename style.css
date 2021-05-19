@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+body {
+    font-family: "Noto Sans KR", "Malgun Gothic", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+#wrapper {
+    margin: 3rem 10%;
+}
+
+.profile img,
+.profile amp-img {
+    border-radius: 50%;
+    width: 4em;
+    margin: 0 0.5em 0 0;
+}
+
+.profile img,
+.profile span,
+.profile amp-img {
+    vertical-align: middle;
+}
+
+div.profile span {
+    font-size: 1.2em;
+}
+
+div.profile-detail {
+    display: inline-flex;
+    flex-direction: column;
+    vertical-align: middle;
+}
+
+div.profile-detail a {
+    padding: 0 0.1em;
+}
+
+p.powered-by {
+    font-size: 0.8em;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #000ec5;
+}
+
+a:link {
+    color: #0058ff;
+}

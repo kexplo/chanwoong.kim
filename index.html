@@ -1,55 +1,8 @@
 <!DOCTYPE html>
-<html ⚡ lang="en">
+<html lang="en">
 <head>
     <meta charset="utf-8">
-    <!-- AMP -->
-    <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
-    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
-    <style amp-custom>
-        body {
-            font-family: "Noto Sans KR", "Malgun Gothic", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-        }
-        #wrapper {
-            margin: 3rem 10%;
-        }
-        .profile img, .profile amp-img {
-            border-radius: 50%;
-            width: 4em;
-            margin: 0 0.5em 0 0;
-        }
-        .profile img, .profile span, .profile amp-img {
-            vertical-align: middle;
-        }
-        div.profile span {
-            font-size: 1.2em;
-        }
-        div.profile-detail {
-            display: inline-flex;
-            flex-direction: column;
-            vertical-align: middle;
-        }
-        div.profile-detail a {
-            padding: 0 0.1em;
-        }
-        p.powered-by {
-            font-size: 0.8em;
-        }
-        a:link, a:visited {
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        a:visited {
-            color: #000ec5;
-        }
-        a:link {
-            color: #0058ff;
-        }
-    </style>
-    <!-- // AMP -->
+    <link href="style.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width,minimum-scale=1">
     <link rel="canonical" href="https://chanwoong.kim">
     <!-- favicon -->
@@ -70,36 +23,21 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <title>Chanwoong Kim's Homepage</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XDWHVN2N1M"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-XDWHVN2N1M');
+    </script>
 </head>
 <body>
-    <amp-analytics type="gtag" data-credentials="include">
-    <script type="application/json">
-    {
-      "vars": {
-        "gtag_id" : "UA-120625399-1",
-        "config": {
-            "UA-120625399-1": {}
-        }
-      },
-      "triggers": {
-        "outboundLinks": {
-          "on": "click",
-          "selector": "a",
-          "request": "event",
-          "vars": {
-            "eventCategory": "outbound",
-            "eventAction": "click",
-            "eventLabel": "${outboundLink}"
-          }
-        }
-      }
-    }
-    </script>
-    </amp-analytics>
     <div id="wrapper">
     <header>
         <div class="profile">
-            <amp-img width="4em" height="4em" src="imgs/profile-002.png" alt="rounded profile image"></amp-img>
+            <img style="width: 4em; height: 4em;" src="imgs/profile-002.png" alt="rounded profile image"/>
             <div class="profile-detail">
                 <span class="name">Chanwoong Kim</span>
                 <small><a href="mailto:me@chanwoong.kim" data-vars-outbound-link="mailto">me@chanwoong.kim</a></small>
@@ -111,9 +49,10 @@
     </header>
     <div class="container">
         <section>
-            <p><amp-img width="13.84em" height="8em" src="imgs/playing-games-with-my-wife.png" alt="playing games with my wife"></amp-img></p>
+            <h2>Introduce</h2>
+            <p><img style="width:13.84em; height:8em;" src="imgs/playing-games-with-my-wife.png" alt="playing games with my wife"/></p>
             <p>I am a software engineer and a video gamer.</p>
-            <p>My Résumé is <a href="resume">here</a></p>
+            <p>My résumé is <a href="resume">here</a></p>
         </section>
         <section>
             <h2>Presentations</h2>
@@ -192,7 +131,6 @@
     </div>
     <footer>
         <p>&copy; 2018–2021, Chanwoong Kim</p>
-        <p class="powered-by">Powered by ⚡ </p>
     </footer>
     </div>
 </body>
