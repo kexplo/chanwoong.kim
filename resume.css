@@ -59,6 +59,12 @@ section h3 {
     color: #3e3e3e;
 }
 
+#skills h3,
+#work-experience h3 {
+    font-size: 0.9em;
+    color: #666;
+}
+
 .department {
     font-size: 0.9em;
 }
