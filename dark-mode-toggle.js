@@ -28,11 +28,23 @@ class DarkModeToggle {
 
   _updateMode() {
     if (this.mode === 'dark') {
-      this.darkCSS.forEach(css => css.disabled = false)
-      this.lightCSS.forEach(css => css.disabled = true)
+      this.darkCSS.forEach(css => {
+        css.disabled = false
+        css.media = 'all'
+      })
+      this.lightCSS.forEach(css => {
+        css.disabled = true
+        css.media = 'not all'
+      })
     } else {
-      this.darkCSS.forEach(css => css.disabled = true)
-      this.lightCSS.forEach(css => css.disabled = false)
+      this.darkCSS.forEach(css => {
+        css.disabled = true
+        css.media = 'not all'
+      })
+      this.lightCSS.forEach(css => {
+        css.disabled = false
+        css.media = 'all'
+      })
     }
     localStorage.setItem('darkModeToggle', this.mode)
     this.toggleCheckbox.checked = this.mode === 'dark'
