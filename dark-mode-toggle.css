@@ -1,0 +1,52 @@
+div.color-scheme-toggle {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
+
+.switch {
+    border: 2px solid #e8e6e3;
+    border-radius: 1rem;
+    display: flex;
+    width: 3rem;
+    height: 1.5rem;
+    transition: 0.4s;
+    cursor: pointer;
+    position: relative;
+    background-color: #e8e6e3;
+}
+
+.switch:before {
+    position: absolute;
+    content: "";
+    transition: 0.4s;
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    background-color: #fff;
+    border-radius: 50%;
+    top: 0.25rem;
+    left: 0.25rem;
+}
+
+
+input[type=checkbox] {
+    visibility: hidden;
+    display: none;
+}
+
+input[type=checkbox]:checked + .switch {
+    background-color: #181a1b;
+}
+
+
+input[type=checkbox]:checked + .switch:before {
+    background-color: #e8e6e3;
+    transform: translateX(1.5rem);
+}
+
+@media print {
+    div.color-scheme-toggle {
+        display: none;
+    }
+}

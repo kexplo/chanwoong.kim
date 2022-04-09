@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <title>Chanwoong Kim</title>
   <link rel="stylesheet" href="resume.css" />
+  <link rel="stylesheet" href="resume-dark.css" media="(prefers-color-scheme: dark)">
   <link rel="stylesheet" media="print" href="print.css">
+  <link rel="stylesheet" href="dark-mode-toggle.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <!-- favicon -->
@@ -34,6 +36,10 @@
   </script>
 </head>
 <body>
+  <div class="color-scheme-toggle">
+    <input type="checkbox" id="color-scheme-toggler">
+    <label class="switch" for="color-scheme-toggler"/>
+  </div>
 <header id="title-block-header">
 </header>
 <main itemscope itemtype="https://schema.org/Person">
@@ -169,5 +175,9 @@
   </footer>
 
 </main>
+    <script src="dark-mode-toggle.js"></script>
+    <script type="text/javascript">
+        new DarkModeToggle(document.querySelector('div.color-scheme-toggle input[type="checkbox"]'));
+    </script>
 </body>
 </html>

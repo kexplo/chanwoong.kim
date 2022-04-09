@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-dark.css" media="(prefers-color-scheme: dark)">
+    <link rel="stylesheet" href="dark-mode-toggle.css">
     <meta name="viewport" content="width=device-width,minimum-scale=1">
     <link rel="canonical" href="https://chanwoong.kim">
     <!-- favicon -->
@@ -137,5 +139,9 @@
         <p>&copy; 2018–2021, Chanwoong Kim</p>
     </footer>
     </div>
+    <script src="dark-mode-toggle.js"></script>
+    <script type="text/javascript">
+        new DarkModeToggle(document.querySelector('div.color-scheme-toggle input[type="checkbox"]'));
+    </script>
 </body>
 </html>
