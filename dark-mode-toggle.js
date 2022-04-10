@@ -22,7 +22,7 @@ class DarkModeToggle {
   toggle() {
     this.mode = this.mode === 'dark' ? 'light' : 'dark'
     // set transition
-    document.body.style.transition = 'background-color 0.4s';
+    document.documentElement.style.transition = 'background-color 0.4s';
     this._updateMode()
   }
 
