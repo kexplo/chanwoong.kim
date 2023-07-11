@@ -1,3 +1,4 @@
+@media not print {
 html {
     color-scheme: dark;
     background-color: #181a1b;
@@ -66,4 +67,5 @@ section h3 {
 #work-experience h3,
 .data-range {
     color: #a8a095;
+}
 }
