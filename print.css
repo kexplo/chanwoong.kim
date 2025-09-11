@@ -21,3 +21,7 @@ a:link, a:visited {
 section.pb {
     page-break-after: always;
 }
+
+.no-print {
+    display: none !important;
+}
